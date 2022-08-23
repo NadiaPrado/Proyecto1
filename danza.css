@@ -21,7 +21,6 @@ h1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    /*grid-auto-rows: auto;*/
     padding: 40px;
     gap: 10px;
 }
@@ -36,3 +35,53 @@ h1 {
     font-size: small;
     display: none;
 }
+
+/*Modal*/
+.modal{
+    display: none;
+}
+
+.modal:target {
+    display: block;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.863);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.modal a {
+    display: flex;
+    justify-content: right;
+    margin-right: 20px;
+    font-size: x-large;
+    color: white;
+    text-decoration: none;
+
+}
+
+.img_modal{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    margin-top: 25px;
+    height: 80%;
+    width: 100%;
+}
+
+
+.img_modal a{
+    font-size: xx-large;
+    color: white;
+    margin:10px;
+    text-decoration: none;
+}
+
+.img_modal img{
+    width: 400px;
+    height: 100%;
+}
+
+
+
