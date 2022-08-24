@@ -19,7 +19,7 @@ h1 {
 .contenedor{
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(3, 1fr);
     padding: 40px;
     gap: 10px;
@@ -29,6 +29,7 @@ h1 {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 15px;
 }
 
 .titulo{
@@ -88,6 +89,4 @@ h1 {
     margin-left: 10px;
     font-size: smaller;
 }
-
-
 
