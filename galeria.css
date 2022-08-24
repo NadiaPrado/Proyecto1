@@ -34,6 +34,11 @@ img{
     height:450px;
 }
 
+nav a:hover{
+    border-radius: 8px;
+    font-weight: bolder;
+}
+
 /* Resposive */
 @media screen and (max-width: 768px){
     .contenedor{

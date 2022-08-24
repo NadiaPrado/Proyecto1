@@ -32,9 +32,19 @@ h1 {
     border-radius: 15px;
 }
 
+.imagen:hover{
+    width: 98%;
+    height: 98%;
+}
+
 .titulo{
     font-size: small;
     display: none;
+}
+
+nav a:hover{
+    border-radius: 8px;
+    font-weight: bolder;
 }
 
 /*Modal*/
