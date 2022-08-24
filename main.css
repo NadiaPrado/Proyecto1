@@ -97,6 +97,60 @@ h1 {
     color: rgba(255, 255, 255, 0.705);
     margin-left: 10px;
     font-size: smaller;
+    position: absolute;
 }
 
+/* Resposive */
+@media screen and (max-width: 768px){
+    .contenedor{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        padding: 20px;
+        gap: 10px;
+    }
 
+    h1 {
+        margin-top: 40px;
+        text-align: center;
+        font-family: 'Lucida Sans';
+        font-size: x-large;
+    }
+    
+}
+
+@media screen and (max-width: 425px){
+    .contenedor{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+        padding: 20px;
+        gap: 10px;
+    }
+
+    h1 {
+        margin-top: 40px;
+        text-align: center;
+        font-family: 'Lucida Sans';
+    }
+
+    .img_modal img{
+        width: 320px;
+        height: 100%;
+    }
+
+    .contenedor_img:nth-child(5) {
+        grid-column-start: span 1;
+    }
+    
+    .contenedor_img:nth-child(6) {
+        grid-column-start: span 1;
+    }
+    
+    .contenedor_img:nth-child(11) {
+        grid-column-start: span 1;
+    }
+
+    .modal h2{
+        margin-left: 8px;
+        font-size:x-small;
+    }
+}

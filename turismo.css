@@ -90,3 +90,42 @@ h1 {
     font-size: smaller;
 }
 
+/* Resposive */
+@media screen and (max-width: 768px){
+    .contenedor{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        padding: 20px;
+        gap: 10px;
+    }
+
+    h1 {
+        margin-top: 30px;
+        text-align: center;
+        font-family: 'Lucida Sans';
+        font-size: x-large;
+    }
+    
+}
+
+@media screen and (max-width: 425px){
+    .contenedor{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(15, 1fr);
+        padding: 20px;
+        gap: 10px;
+    }
+
+    h1 {
+        margin-top: 40px;
+        text-align: center;
+        font-family: 'Lucida Sans';
+        font-size:27px;
+    }
+
+    .img_modal img{
+        width: 320px;
+        height: 100%;
+    }
+}
+
