@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+h1{
+    text-align: center;
+    font-size: xx-large;
+    margin-top: 25px;
+    font-family: 'Lucida Sans';
+}
+
+#btnlogin{
+    background-color:rgb(206, 9, 85);
+    border-color: rgb(206, 9, 85);
+}
+
+body{
+    background-color: rgba(206, 9, 85, 0.274);
+}
+
+.linklogin{
+    color: rgba(0, 0, 0, 0.678);
+}
+
+/* .container{
+    padding-left: 400px;
+    padding-right: 400px;
+} */
