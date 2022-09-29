@@ -9,6 +9,8 @@ function login(){
         alert("Los datos son correctos")
         window.location="galeria.html";
 
+    }else{
+        alert("Intentelo de nuevo!, los datos no son correctos")
     }
 
 }
