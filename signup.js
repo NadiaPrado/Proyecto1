@@ -1,16 +1,31 @@
+let usuarioInput = document.getElementById('usuario')
+
+let contraseña = document.getElementById('contrasena')
+
+let correoInput = document.getElementById('correo')
+
+let confirmarcontrasenaInput = document.getElementById('confirmarcontrasena')
+
+
 function login(){
-    let usuario, contraseña;
-    usuario = document.getElementById("usuario").value;
-    contraseña = document.getElementById("contrasena").value;
 
-    if(usuario == "Nadia" && contraseña=="12usuario" || usuario=="Brenda" && contraseña=="B30" || usuario == "Joel" && contraseña == "abcde"){
-        console.log('los datos son correctos')
-        console.log('los datos son correctos')
-        alert("Los datos son correctos")
-        window.location="galeria.html";
-
+    if(usuarioInput.value != "" && contraseña.value !="" && correoInput.value !="" && confirmarcontrasenaInput.value!=""){
+        console.log(`los datos del usuario ${usuario} han sido guardados`)
+        // alert(`Los datos son correctos, Bienvenido(a): ${usuario}`)
+        Swal.fire({
+            text: `Los datos han sido guardados correctamente, Bienvenido(a): ${usuarioInput.value}`,
+            timer: 2000,
+            icon: 'success'
+            })
+            console.log('antes de la reedireccion')
+            setTimeout(function(){location.href = 'galeria.html';},1000*3)();
     }else{
-        alert("Intentelo de nuevo!, los datos no son correctos")
+        Swal.fire({
+            text: `Todos los datos deben de estar completados`,
+            timer: 2000,
+            icon: 'warning'
+            })
+            console.log('antes de la reedireccion')    
     }
 
 }

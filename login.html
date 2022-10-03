@@ -14,7 +14,6 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="login.css">
-    <script src="login.js"></script>
     <title>Login</title>   
 </head>
 <header>
@@ -43,69 +42,19 @@
 </header>
 <body>
     <h1>Login</h1>
-
     <div class="container">
-        <form action="">
-            <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-            </div>
 
-            <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
-            </div>
-
-            <div>
-            <a href="#" class="linklogin">¿Olvidaste tu contraseña?</a>
-            </div>
-            
-            <button id="btnlogin" type="submit" class="btn btn-primary">Submit</button>
-        </form>
-        
-        
+    <ul>    
+    <input type="text" name="usuario" id="usuario" placeholder="Usuario">
+    <input type="password" name="contrasena" id="contrasena" placeholder="Contraseña">
+    <input type="button" id="btnlogin" value="Iniciar sesion" id="boton" onclick="login();">
+    </ul>
     </div>
-     
-    <!-- <script>
-        let correoCorrecto = 'nadiaprado2000@hotmail.com'
 
-        let contrasenaCorrecta = '1234'
-
-        let correoInput = document.getElementById('exampleInputEmail1')
-
-        let contrasenaInput = document.getElementById('exampleInputPassword1')
-
-        let button = document.querySelector('button')
-
-
-        const enviarInfo = function(event){
-            event.preventDefault()
-            if (correoCorrecto === correoInput.value && contrasenaCorrecta === contrasenaInput.value){
-                console.log('Listo!, los datos son correctos y enviamos los datos al servidor',
-                    {
-                        correoCorrecto: correoInput.value, 
-                        contrasenaCorrecta:contrasenaInput.value
-                    }
-                )
-                // window.location = "galeria.html";
-                button.disabled = true
-                button.removeEventListener('click', enviarInfo)
-
-            }else{
-                console.log('Los datos son incorrectos')
-            }
-        }
-
-        button.addEventListener('click',enviarInfo)
-    </script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-    crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
-    crossorigin="anonymous"></script> -->
+    <script src="login.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+               
+    </div>
     
 </body>
 

@@ -5,14 +5,27 @@ h1{
     font-family: 'Lucida Sans';
 }
 
-
-
 #btnsignup{
     background-color:rgb(206, 9, 85);
     border-color: rgb(206, 9, 85);
+}
+
+body{
+    background-color: rgba(253, 103, 185, 0.336);
 }
 
 .container{
 display: flex;
 justify-content: center;
 }
+
+ul{
+    display: grid;
+}
+
+ul input{
+    margin: 5px;
+    border-radius: 10px;
+}
+
+
