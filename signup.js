@@ -17,7 +17,6 @@ function login(){
             timer: 2000,
             icon: 'success'
             })
-            console.log('antes de la reedireccion')
             setTimeout(function(){location.href = 'galeria.html';},1000*3)();
     }else{
         Swal.fire({
@@ -25,7 +24,6 @@ function login(){
             timer: 2000,
             icon: 'warning'
             })
-            console.log('antes de la reedireccion')    
     }
 
 }
